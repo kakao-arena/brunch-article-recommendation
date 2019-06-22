@@ -1,0 +1,6 @@
+*.un~
+*.pyc
+*.swp
+*.json
+res/
+.DS_Store
