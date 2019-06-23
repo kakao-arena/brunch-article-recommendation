@@ -55,7 +55,7 @@ def _entropy_diversity(recs, topn):
     return ent
 
 
-def evaluate(recs_path, dev_path, topn=10):
+def evaluate(recs_path, dev_path, topn=100):
     recs = {}
     target_users = set()
     for line in open(recs_path):
