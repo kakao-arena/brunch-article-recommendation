@@ -39,7 +39,7 @@ def _map(recs, gt, topn):
             if r in seen:
                 correct += 1
                 _ap += (correct / (i + 1.0))
-        _ap /= min(len(gt), len(rec))
+        _ap /= min(len(seen), len(rec))
         ap += _ap
         n += 1.0
     return ap / n
